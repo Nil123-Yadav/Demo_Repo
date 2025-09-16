@@ -9,3 +9,5 @@ modules:
     build-parameters:
       builder: custom
       supported-platforms: []
+      commands:
+        - echo "No build step required for Python app"
