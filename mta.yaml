@@ -5,7 +5,7 @@ version: 0.0.1
 modules:
   - name: python-app
     type: python.app
-    path: python-app
+    path: .
     build-parameters:
       builder: custom
       supported-platforms: []
