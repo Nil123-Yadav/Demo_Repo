@@ -1,10 +1,16 @@
 ID: demo_app
-_schema-version: '3.1'
+_schema-version: '3.3'   # Updated schema version for better Python support
 version: 0.0.1
 
 modules:
   - name: demo_app
-    type: html5
+    type: python
     path: .
+    parameters:
+      buildpack: python_buildpack
+    build-parameters:
+      builder: python
+      build-result: dist
+      build-target: .
 
 resources: []
