@@ -4,10 +4,10 @@ version: 0.0.1
 
 modules:
   - name: python-app
-    type: python.app
+    type: application
     path: .
-    build-parameters:
-      builder: custom
-      supported-platforms: []
-      commands:
-        - echo "No build step required for Python app"
+    parameters:
+      memory: 128M
+      disk-quota: 512M
+      buildpack: python_buildpack
+      instances: 1
