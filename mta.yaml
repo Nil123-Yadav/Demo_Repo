@@ -3,11 +3,11 @@ _schema-version: '3.1'
 version: 0.0.1
 
 modules:
-  - name: python-app
+  - name: ${APP_NAME}
     type: application
     path: .
     parameters:
-      memory: 128M
+      memory: ${MEMORY}
       disk-quota: 512M
       buildpack: python_buildpack
       instances: 1
