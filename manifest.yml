@@ -1,8 +1,9 @@
 ---
 applications:
-  - name: python-hello-cf
-    memory: 128M
+  - name: ${APP_NAME}
+    memory: ${MEMORY}
     instances: 1
     path: .
     buildpacks:
       - python_buildpack
+
